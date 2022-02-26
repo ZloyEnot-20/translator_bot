@@ -5,10 +5,7 @@
   "main": "bot.js",
   "scripts": {
     "start": "node bot.js",
-    "postinstall": "netlify-lambda install",
-    "buildNetlify": "netlify-lambda build functions",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "devNetlify": "netlify-lambda serve functions"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
