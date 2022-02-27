@@ -11,7 +11,7 @@ bot.on("text", async (ctx) => {
   ctx.reply("Loading...");
   try {
     const text = ctx.message.text.split(" ").slice(1).join(" ");
-    const language = ctx.message.text.split(" ").shift();
+    const language = ctx.message.text.split(" ").shift().toLowerCase();
     if (language.length >= 3) {
       ctx.reply(
         "Кажется вы забыли указать язык на который вы хотите перевести ваш текст, используйте первые две буквы языка перед вашим текстом"
